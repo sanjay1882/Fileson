@@ -1,0 +1,126 @@
+.Container{
+    width: 100%;
+    height: 85px;
+    background-color: aliceblue;
+display: flex;
+justify-content:center;
+align-items: center;
+padding-bottom: 15px;
+}
+.Header{
+    width: 85%;
+   
+    height: 100%;
+  margin-left: 3%;
+  justify-content: center;
+  display: flex;
+  
+  flex-direction: column;
+}
+.Header  h1{
+    font-weight: 600;
+font-size: 24px;
+}
+
+.Header h5{
+    font-weight: 400;
+    color: grey;
+ 
+    
+}
+.Header .Type{
+    color: black;
+font-size: 13px;
+    font-weight: 400;
+  
+
+}
+.bxs-down-arrow{
+    font-size: 11px;
+}
+
+.Sorting-Trays-container{
+    width: 86px;
+    height: 38px;
+    border-radius: 30px;
+    background-color: #fff;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+}
+.Tray-holder{
+    width: 15%;
+    height: 100%;
+    
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Sorting-Tray-1{
+height: 100%;
+width: 45%;
+border-radius: 50%;
+background-color: #4f1093;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+
+
+}
+.Sorting-Tray-1,
+.Sorting-Tray-2 {
+    background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #767575;
+}
+
+.Sorting-Tray-1.active {
+    background-color: #4f1093;
+    color:white;
+  }
+  .Sorting-Tray-2.active {
+    background-color: #4f1093;
+    color:white;
+  }
+.Sorting-Tray-2{
+    height: 100%;
+    width: 45%;
+    border-radius: 50%;
+   cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #767575;
+    
+    }
+    select {
+        padding: 2px;
+       border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        background:local;
+        width: 90px;
+    }
+label{
+    border:none;
+}
+    
+  select option:checked{
+    background-color: rgb(79, 16, 147);
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .Tray-holder{
+        width: 90px;
+        
+    }
+    .Container{
+        height: 100px;
+    }
+  }

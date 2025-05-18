@@ -1,0 +1,196 @@
+.Container-File {
+    height: 191px;
+    width: 17%;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Container-File:hover {
+   
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .Container-File .FolderIcon {
+    height: 90px;
+    width: 100%;
+    background-image: url(../assets/xls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+  }
+  
+  .Container-File .bx-dots-vertical-rounded {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 22px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .Container-File .bx-dots-vertical-rounded:hover {
+    background-color: #eee;
+  }
+  
+  .Container-File .File-details {
+    flex: 1;
+    padding: 10px 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .Container-File .File-details h2 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .Container-File .File-details h6 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #888;
+    margin-top: 4px;
+  }
+  
+  .Container-File .Share-Details {
+    padding: 8px 12px;
+    background-color: #f3f4f6;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .Container-File .Share-Details h6 {
+    font-size: 11px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  
+  /* Content layout (list view style) */
+  .content {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 0 12px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .content:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .content .FolderIcon {
+    height: 50px;
+    width: 60px;
+    background-image: url(../assets/FolderIng-content.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    margin-right: 12px;
+  }
+  
+  .content .bx-dots-vertical-rounded {
+    display: none;
+  }
+  
+  .content .File-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .content .File-details h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  .content .File-details h6 {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .content .File-details span {
+    display: block;
+    font-size: 11px;
+    color: #aaa;
+  }
+  
+  
+  /* Context menu styling */
+  .context-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    overflow: auto;
+  }
+  
+  .context-menu li {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .context-menu li h5{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .context-menu li:hover {
+    background: #f0f0f0;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .Container-File {
+      width: 48%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+  
+    .Container-File .File-details h2 {
+      font-size: 12px;
+    }
+  
+    .Container-File .Share-Details h6 {
+      font-size: 10px;
+    }
+  }
+  

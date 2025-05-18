@@ -1,0 +1,74 @@
+.OverView-Container{
+width: 30%;
+height: 100vh;
+background-color: aliceblue;
+}
+
+.OverView-Container .File-Overview{
+    height: 300px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.OverView-Container .File-Overview .img{
+width: 80%;
+justify-content: center;
+height: 240px;
+
+}
+
+.img{
+  margin: auto;
+    border-radius: 25px;
+    background-image: url('../assets/img-sample.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.OverView-Container  .Tools{
+    
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tools .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+ background-color:rgb(146, 151, 156);
+    border-radius: 13px;
+    margin-left: 5px;
+}
+.File-Desciption .Name-Type{
+    
+width: 80%;
+margin: auto;
+height: 50px;
+background-color: aqua;
+}
+.File-Desciption .Name-Type h4{
+    color: gray;
+    font-weight: 400;
+    font-size: 13px;
+}
+.File-Desciption .Name-Type h2{
+    font-size: 18px;
+}
+.File-Desciption .Description-Box {
+    background-color: blanchedalmond;
+margin: auto;
+width: 80%;
+height: auto;
+
+}
+.File-Desciption .Description-Box{
+    margin-top: 10px;
+}
+.File-Desciption .Description-Box p{
+    color: grey;
+}

@@ -1,0 +1,166 @@
+.file-uploader-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+   background: none;
+  }
+  
+  .drop-zone {
+    border: 2px dashed #999;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+   color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .drop-zone.center {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drop-zone:hover {
+  padding: 45px;
+  }
+  
+  .file-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: flex-start;
+    
+  }
+  
+  .file-item {
+
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 150px;
+    position: relative;
+    word-break: break-all;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+       
+  }
+  
+  .file-name {
+    font-size: 14px;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff5f5f;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background: #e04848;
+  }
+  
+  .action-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .upload-btn,
+  .cancel-btn {
+    padding: 19px 30px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 26px;
+  }
+  
+  .upload-btn {
+    background-color:  rgb(79, 16, 147);;
+    color: white;
+  }
+  
+  .cancel-btn {
+
+    color: rgb(16, 15, 15);
+  }
+  
+  .upload-btn:hover {
+    background-color:  rgb(100, 35, 169);;
+  }
+  
+  .cancel-btn:hover {
+   background-color: #f2f0f0;
+  }
+  .file-upload-block i{
+    font-size: 39px;
+
+  }
+
+
+  .file-card {
+    position: relative;
+    width: 110px;
+    height:110px;
+    border-radius: 12px;
+    background: #f6eaff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  .file-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .file-name {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    word-break: break-word;
+  }
+  
+  .remove-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.15);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  .file-card:hover .remove-overlay {
+    opacity: 1;
+  }
+  
+  .remove-icon {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

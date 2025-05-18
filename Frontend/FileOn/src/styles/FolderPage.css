@@ -1,0 +1,53 @@
+.Folder-Page-Content {
+    display: block;
+    gap: 20px; /* Adds spacing between filter and content */
+    
+  
+    height: 100vh;
+   
+}
+
+/* Filter section */
+.Filter-Container-FP {
+   
+    width:100%; 
+    
+    margin: auto;
+}
+
+
+.Folder-Contents {
+    flex: 3; 
+    max-height: 490px; 
+    overflow-y:scroll;
+    height: 80%;
+    background-color: aliceblue; 
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+  
+}
+@media (max-width: 768px) {
+    
+     
+    .Folder-Contents {
+        width: 100%; /* Take full width */
+        flex: unset;
+      /* Remove flex-based width */
+    }
+.Folder-Contents{
+    max-height: 914px;
+display: flex;
+}
+    
+}
+@media(max-height:1368px){
+.Folder-Contents {
+    
+    max-height: 1368px;
+}
+
+}

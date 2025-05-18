@@ -1,0 +1,35 @@
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+  .custom-button {
+    padding: 15px 15px;
+   background: none;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    width: 85%;
+      
+  transition: background 0.3s ease, color 0.3s ease;
+  }
+
+.My-Files .active {
+  background-color: #5D2DE6;
+  color: white;
+}
+  
+  
+  .custom-button:hover {
+    background-color: #5D2DE6;
+  
+    
+  }
+  

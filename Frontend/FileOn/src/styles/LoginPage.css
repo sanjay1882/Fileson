@@ -1,0 +1,59 @@
+.Login-Container{
+    width: 100%;
+    height: 100vh;
+    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Signin-Container{
+    height: 500px;
+    width: 38%;
+    background-color: #5D2DE6;
+    border-radius: 30px;
+display: flex;
+flex-direction: column;
+}
+.Title-Logo{
+    display: flex;
+    height: 100px;
+   
+    border-radius: 30px 30px 0px 0px ;
+justify-content: center;
+align-items: center;
+}
+.Logo-Box{
+text-align: center;
+}
+.Inputs{
+    width: 90%;
+    margin:0 auto 0 auto;
+
+    height: 50%;
+}
+.Inputs input{
+    width: 90%;
+    margin: 10px auto 10px auto;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    font-size: 15px;
+    /* border: 2px solid black;
+    border-radius: 18px; */
+    border: none;
+}
+.Inputs #Submit{
+text-align: center;
+width: 30%;
+height: 50px;
+border-radius: 22px;
+margin-top: 10px;
+}
+.Signup{
+    background-color: rgb(4, 18, 31);
+    width: 100%;
+    height: 147px;
+    border-radius: 0px 0px 27px 27px;
+}
